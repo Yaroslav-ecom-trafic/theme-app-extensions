@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "995a8b44ef695c921b178dcd7a690b6c"
-application_url = "https://rouge-outdoors-cd-liz.trycloudflare.com"
+application_url = "https://survival-islands-mineral-icon.trycloudflare.com"
 embedded = true
 name = "theme-app-extensions"
 handle = "theme-app-extensions-18"
@@ -19,9 +19,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://rouge-outdoors-cd-liz.trycloudflare.com/auth/callback",
-  "https://rouge-outdoors-cd-liz.trycloudflare.com/auth/shopify/callback",
-  "https://rouge-outdoors-cd-liz.trycloudflare.com/api/auth/callback"
+  "https://survival-islands-mineral-icon.trycloudflare.com/auth/callback",
+  "https://survival-islands-mineral-icon.trycloudflare.com/auth/shopify/callback",
+  "https://survival-islands-mineral-icon.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
