@@ -1,0 +1,44 @@
+
+<link rel="stylesheet" href="{{ 'input-app.css' | asset_url }}">
+
+<div>
+    <h1>{{ block.settings.title }}</h1>
+    <form class="input-app-form" action="">
+        <label class="input-app-label" for="{{ block.id }}">{{ block.settings.label }}</label>
+        <input class="input-app-input" type="text" id="{{ block.id }}" name="{{ block.id }}" placeholder="{{ block.settings.placeholder }}">
+        <button class="input-app-button" type="submit">Submit</button>
+
+        <div class="input-app-result">
+            <p></p>
+        </div>
+    </form>
+</div>
+
+<script src="{{ 'input-app.js' | asset_url }}" defer></script>
+
+{% schema %}
+    {
+      "name": "Input App",
+      "target": "section",
+      "settings": [
+        {
+            "type": "text",
+            "id": "placeholder",
+            "label": "Placeholder",
+            "default": "Placeholder"
+        },
+        {
+            "type": "text",
+            "id": "label",
+            "label": "Label",
+            "default": "Label"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+        }
+      ]
+    }
+{% endschema %}

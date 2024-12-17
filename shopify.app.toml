@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "995a8b44ef695c921b178dcd7a690b6c"
-application_url = "https://example.com/"
+application_url = "https://morgan-compromise-circuit-sun.trycloudflare.com"
 embedded = true
 name = "theme-app-extensions"
 handle = "theme-app-extensions-18"
@@ -18,7 +18,15 @@ api_version = "2024-10"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://morgan-compromise-circuit-sun.trycloudflare.com/auth/callback",
+  "https://morgan-compromise-circuit-sun.trycloudflare.com/auth/shopify/callback",
+  "https://morgan-compromise-circuit-sun.trycloudflare.com/api/auth/callback"
+]
 
 [pos]
 embedded = false
+
+[build]
+dev_store_url = "zeeper-store.myshopify.com"
+automatically_update_urls_on_dev = true
